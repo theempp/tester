@@ -1,0 +1,16 @@
+Continuing the coffee roaster job in /Users/zozo/Desktop/test.
+
+Read RESUME.md and TRANSITION-BRIEF.md first so you know where things are. The story
+direction is signed — don't re-run job-kickoff or re-open the three directions.
+
+I want to restructure the site. I've got an idea and I want to tell you about it before you
+do anything, so just read the files, tell me you're caught up, and wait. Don't propose
+anything yet.
+
+Heads up: it'll mean generating more assets on Higgsfield. I'm fine with spending the
+credits. Quote them one card at a time and don't fire anything until I type GO on its own
+line.
+
+Also still outstanding from before, don't let it get lost: the hero film's staging is locked
+at take 4 but it's only a 480p draft, so it needs a 720p ship render of the identical prompt
+(65 cr) before it gets encoded and installed.
