@@ -1,16 +1,33 @@
 Continuing the coffee roaster job in /Users/zozo/Desktop/test.
 
-Read RESUME.md and TRANSITION-BRIEF.md first so you know where things are. The story
-direction is signed — don't re-run job-kickoff or re-open the three directions.
+Read RESUME.md first, then SCROLL-STRUCTURE.md, then master.md. Do not read
+TRANSITION-BRIEF.md as live work — it is superseded history and its four directions are
+dead. Don't re-run job-kickoff, don't re-open the signed identity, the DEVICE, or the
+film's locked take-4 staging, and don't re-run engine-decision — MECHANISM stays pin-film.
 
-I want to restructure the site. I've got an idea and I want to tell you about it before you
-do anything, so just read the files, tell me you're caught up, and wait. Don't propose
-anything yet.
+Where we got to: the restructure is that the pin doesn't hand off to anything, the film
+just continues. Three movements — the approach we already have locked, then a fall-and-
+reveal where the camera backs up and the beans decelerate until the last one lands in the
+bag, then the bag being wrapped. That's written down in SCROLL-STRUCTURE.md and it's
+PARTIAL on purpose.
 
-Heads up: it'll mean generating more assets on Higgsfield. I'm fine with spending the
-credits. Quote them one card at a time and don't fire anything until I type GO on its own
-line.
+What I want to do in this chat:
+1. I'm going to describe the FINAL piece of the scroll animation.
+2. Then I'm going to draw out the rest of the website below it for you.
 
-Also still outstanding from before, don't let it get lost: the hero film's staging is locked
-at take 4 but it's only a 480p draft, so it needs a 720p ship render of the identical prompt
-(65 cr) before it gets encoded and installed.
+So: read the files, tell me you're caught up, and wait. Don't propose anything, don't
+write the storyboard, don't touch COMPONENTS.md or ASTRA-PROMPT.md §5 until I've finished
+describing it. Your job is to plan and map the structure — the site itself gets built by
+GPT-6 Astra from the handoff package, not here.
+
+Context on my setup: I now have Blender wired into GPT-6 and into the Astra flow alongside
+Higgsfield, and I'm going for 4K quality. That widens what assets are affordable; it does
+not by itself change the mechanism.
+
+Assets: more Higgsfield spend is pre-accepted. Quote them one card at a time and don't fire
+anything until I type GO on its own line.
+
+Don't let this get lost: the hero film's staging is locked at take 4 but it's only a 480p
+draft. It needs a 720p ship render of the identical prompt (65 cr) before it gets encoded
+and installed — and it's now a hard dependency, because movement 2 has to be seeded from
+that render's exact final frame or the join will show a resolution seam.
