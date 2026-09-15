@@ -1,6 +1,6 @@
 # master
 
-SIGNED:     [ASSUMED — business name not supplied; referred to as "the roaster"]
+SIGNED:     HOUR ZERO (named 2026-09-15; see review/bag-round-1/BAG-ROUND-1.md)
 NICHE:      small-batch coffee roaster
 MODEL:      product
 AUDIENCE:   b2c-considered
@@ -13,7 +13,7 @@ NOT:        no editorial white-space luxury; no soft spatial product-render air;
 FEEL:       instrument · macro, type-in-field, texture, type-reveal
 MOTION-INTENT: playhead into arrivals · measured with express passages · damped and mechanical · spread
 ASSUMED:    card-1 `model` answered "high end detailing services", which does not match the coffee brief — scored `product` from the brief instead
-ASSUMED:    business name not supplied
+RESOLVED:   business name — supplied 2026-09-15 as HOUR ZERO (was ASSUMED)
 ASSUMED:    COMP and SIGNATURE derived from the picked world, not stated in the pitch
 ASSUMED:    the designer's 21st.dev bookmarks are unreachable — the `21st` MCP server is
             unauthorized and this session cannot run OAuth. Components below are picked from
