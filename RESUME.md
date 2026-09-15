@@ -18,7 +18,8 @@ site in one prompt. `ASTRA-PROMPT.md` is that package.
 > Take 5 was fired (25 cr) and reviewed — **not signed**, the machine came back wrong.
 > PART 2's spec was revised. PART 4 was settled as Blender. **Full detail is in
 > `SCROLL-STRUCTURE.md` AMENDMENT 2, which wins over anything below that contradicts it.**
-> Spend is now **207 cr**; balance **~1056.31**.
+> Spend is now **252.5 cr**; balance **1011.81** (reconciled against the live ledger —
+> see the spend table below, and note the unrecorded 30-cr take).
 
 **SUPERSEDED — take 4's locked staging.** Job `1667b1e9-85e7-476f-b45c-1c9edcf275c9`,
 480p draft, reviewed and passed on all four criteria: black surround, beans falling as a
@@ -129,9 +130,24 @@ BROKE:
 | `doorstep-48` | signed (take 1) | `public/media/doorstep-48.png` |
 | `grain-canvas` | placeholder by design — built in code | Magic UI `noise-texture` |
 
-Spend so far: **207 credits** (2 stills + 25 take 1 + 65 take 2 + 65 take 3 + 25 take 4
-+ 25 take 5). Balance **~1056.31** (live `balance` is authoritative; it read 1081.31 before
-take 5). Video alone is 205 of that across five takes, four rejected, none signed.
+Spend so far: **252.5 credits** — reconciled against the live transaction ledger
+2026-09-15, superseding an earlier estimate of 207 which was wrong on three counts.
+Live balance: **1011.81**.
+
+| Item | Cr |
+|---|---|
+| 3 stills (not 2) | 3 |
+| take 1 / 2 / 3 / 4 / 5 | 25 + 65 + 65 + 25 + 25 = 205 |
+| bag round 1 — 6 images, see `review/bag-round-1/` | 14.5 |
+| **UNRECORDED Seedance job, fired 20:52 UTC** | **30** |
+| | **252.5** |
+
+**The 30-cr job is not documented anywhere.** It billed after bag round 1 and is most
+likely AMENDMENT 2's PART 1 delta retake — which was quoted there at 25, not 30. Whoever
+fired it has not written down its job id, whether it was reviewed, or whether it signs
+the staging. **Do not quote the 720p ship render until that take is found and reviewed.**
+Video is 235 of the total across six takes; at most one of them is signed and it is not
+recorded which.
 Drafts and rejected takes live in `review/` and are never overwritten.
 
 ## The ending changed — storyboard already updated
