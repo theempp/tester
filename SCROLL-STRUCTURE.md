@@ -292,3 +292,89 @@ supports transparency. Three reasons, any near-sufficient:
 
 **Only PARTS 1 and 2 are Higgsfield. PART 3 and PART 4 are both Blender/WebGL.**
 No Higgsfield quote exists or should be invented for either.
+
+---
+
+## AMENDMENT 3 — 2026-09-15, PART 1 shipped / PART 2 rejected
+
+**AMENDMENT 3 wins over AMENDMENT 2 where they disagree.**
+
+### PART 1 — SIGNED AND SHIPPED
+
+Take 6 (`review/hero-roast-take6.mp4`, job `0e80d63e-ce56-402a-a848-5fcb378bab6c`, 480p,
+30 cr) fixed take 5's machine and was signed by the designer.
+
+- **Machine fix worked.** Naming the construction positively and repeating it per-second
+  (smooth unbroken panels, continuous seamless welds, flush machined edges, brushed
+  stainless bands, not one visible fastener) killed the riveted agricultural hopper.
+  Signed MAT and CHAR restored.
+- **Mound NOT fixed — accepted as a known deviation.** The pile at the machine's base got
+  BIGGER in take 6 despite heavy positive bare-ground language. Designer accepted it:
+  it is not on the SLOTS reject line, it is gone by ~3s, and it never touches the final
+  frame. Do not re-fire PART 1 for it.
+- **Palette drifted on its own** from take 5's orange desert to a pale grey salt flat under
+  a near-white sky. Not instructed. Accepted. Makes the type-reserve scrim MORE necessary,
+  not less — right-edge readout and lower third sit over near-white for the first ~5s.
+- **Machine is featureless.** "One single smooth machined object" bought the finish but
+  returned a plain black box — no drum, no detail. Accepted.
+
+**Ship path — this is the reusable lesson:** the 720p native re-render was NOT bought.
+Take 6 was **upscaled** instead (`bytedance_video_upscale`, 1080p explicit, job
+`0b910b47-0e52-4fca-972b-673083a7fb4b`) for **0.1 cr** instead of 65. The upscale is
+deterministic — it ships the exact frames that were signed, where a native re-render is a
+fresh roll of the dice that can regress the very miss you just fixed. Reviewed: no
+rewritten edges, no invented texture, stainless band and hard shadow intact.
+
+Shipped files (all-intra `-g 1`, silent):
+- `public/media/hero-roast-film.mp4` — 1920x1080, 241 frames
+- `public/media/hero-roast-film-720.mp4` — phone file, downscaled locally, free
+- `review/part1-final-frame.jpg` — PART 2's seed frame
+
+### PART 2 — REJECTED BY THE DESIGNER, REASON NOT YET CAPTURED
+
+Take 1: `review/part2-take1.mp4`, job `1795c4c1-0422-430b-bf62-af9cf3131970`, 480p, 30 cr.
+Frames in `review/part2-frames/`.
+
+Designer's verdict, verbatim: **"This video needs a retake. Not even close yet."**
+No specifics were given. **The next chat MUST ask what is wrong before quoting anything.**
+Do not infer it from the list below — that list is only what the reviewer could see.
+
+What the reviewer observed (NOT the designer's reasons):
+- HOLD: zero cuts; invisible join (opens exactly on the bean field); camera falls with the
+  beans and they drift past it; camera pulls back BEFORE the beans slow; quick decel, last
+  bean, quick self-seal; locked static tail, zero drift; off-white bag on pure black;
+  brushed-steel valve; no sun, no oil.
+- MISS: camera never settles — it retreats through the entire pour, so the "hold on bag +
+  beans front and centre for about a second" beat never happens, and the bag ends small in
+  frame (~1/4 of height). Held tail ~3.5s rather than 1-2s. Spec block on the bag is
+  illegible mush.
+
+### PACKAGING REOPENED — off-white is the pack, and the name is signed
+
+The designer supplied `review/bag-round-1/B-offwhite-4k.png` and asked for PART 2 to be a
+**black room with the white bag**. This reopens and overrides signed MAT.
+
+- `master.md` MAT said "matte black flat-bottom pouch with a flush brushed-steel valve".
+  **The pack is now the off-white / bone pouch** with a large black `HOUR ZERO` wordmark
+  and a flush brushed-steel valve.
+- `BAG-ROUND-1.md` open ruling 1 and 3 are RESOLVED: **B-offwhite is the hero bag**, not A.
+- **Consequence for Blender:** PART 3's GLB and PART 4's ripping bag must be THIS bag.
+  Same object across parts 2, 3 and 4. This changes an input to work already in progress.
+- `HOUR ZERO` is the signed business name (resolves `master.md`'s
+  `ASSUMED: business name not supplied`).
+- Known defect on the plate: `VARIETY: HEIRLDOM` (should be HEIRLOOM) and a stale struck
+  `ROAST DATE: 07/14/2024`. Label text is illegible in film anyway; the legible label lives
+  in the GLB texture and the macro still, where it is free to fix.
+
+### Operational notes learned this session
+
+- **480p moved 25 -> 30 cr.** Confirmed with a control prompt. 720p unchanged at 65.
+- **The IN THE DARK preset nudge now fires on `get_cost`, not just on submit.** Decline with
+  `declined_preset_id: 24bae836-2c4a-48e0-89b6-49fcc0b21612`.
+- **seedance_2_5 needs `mode: omni_reference`** to accept reference media. The default
+  `t2v` returns a 422 and refuses `start_image` + `image_references` together. The 422 is a
+  validation failure and costs NOTHING.
+- **`generate_audio` defaults to TRUE on seedance_2_5.** Set it false for a silent scrub
+  film. Takes 1-6 were likely generated with unused audio.
+- **Upscale targets are 1080p / 2k / 4k only.** Asking for 720p silently defaults to 2k.
+  Always pass the target explicitly.

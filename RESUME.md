@@ -13,13 +13,18 @@ site in one prompt. `ASTRA-PROMPT.md` is that package.
 
 ## STATE — read this first
 
-> **UPDATED 2026-09-15, late session.** PART 1's staging was REOPENED by the designer:
-> the pitch-black room is dead, PART 1 is now **outdoors on bare ground in hard sun**.
-> Take 5 was fired (25 cr) and reviewed — **not signed**, the machine came back wrong.
-> PART 2's spec was revised. PART 4 was settled as Blender. **Full detail is in
-> `SCROLL-STRUCTURE.md` AMENDMENT 2, which wins over anything below that contradicts it.**
-> Spend is now **252.5 cr**; balance **1011.81** (reconciled against the live ledger —
-> see the spend table below, and note the unrecorded 30-cr take).
+> **UPDATED 2026-09-15, Higgsfield chat 2. READ `SCROLL-STRUCTURE.md` AMENDMENT 3 FIRST —
+> it wins over AMENDMENT 2 and over everything below.**
+>
+> - **PART 1 is SIGNED AND SHIPPED.** Take 6 fixed the machine; the mound at the base was
+>   accepted as a known deviation. Shipped by UPSCALE (0.1 cr), not a 65 cr native
+>   re-render. Files are in `public/media/`.
+> - **PART 2 take 1 was REJECTED** — "not even close yet", designer gave no specifics.
+>   **The next chat must ASK what is wrong before quoting a retake.**
+> - **Packaging reopened:** the pack is now the OFF-WHITE `HOUR ZERO` pouch
+>   (`review/bag-round-1/B-offwhite-4k.png`), not matte black. PARTS 3 and 4 Blender work
+>   must use this bag. The business name is signed as **HOUR ZERO**.
+> - Spend is now **267.1 cr**; balance **981.71**.
 
 **SUPERSEDED — take 4's locked staging.** Job `1667b1e9-85e7-476f-b45c-1c9edcf275c9`,
 480p draft, reviewed and passed on all four criteria: black surround, beans falling as a
@@ -125,7 +130,8 @@ BROKE:
 
 | Slot | State | File |
 |---|---|---|
-| `hero-roast-film` | **take 5 reviewed, NOT signed** (machine wrong); delta retake then 720p | → `public/media/hero-roast-film.mp4` |
+| `hero-roast-film` (PART 1) | **SIGNED — take 6, upscaled to 1080p, shipped** | `public/media/hero-roast-film.mp4` + `-720.mp4` |
+| `hero-roast-film` (PART 2) | **take 1 REJECTED, reason not captured — ask the designer** | `review/part2-take1.mp4` |
 | `bag-label-macro` | signed (take 2) | `public/media/bag-label-macro.png` |
 | `doorstep-48` | signed (take 1) | `public/media/doorstep-48.png` |
 | `grain-canvas` | placeholder by design — built in code | Magic UI `noise-texture` |
