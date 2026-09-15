@@ -1,86 +1,125 @@
 # SCROLL-STRUCTURE — the continuous film (SUPERSEDES the transition brief)
 
-Described by the designer 2026-09-15, in a new chat, as the restructure RESUME.md was
-holding for. **Partial — the designer has more to add.** This file records what has been
-described so far, verbatim in intent. Nothing here is signed and nothing has been quoted.
+Described by the designer 2026-09-15 across two chats. **This file is now COMPLETE for the
+scroll and the page** — the designer has finished describing. Nothing here is signed by a
+skill and nothing has been quoted. `TRANSITION-BRIEF.md` is superseded history; its four
+directions are dead and must not be written.
 
-## The decision this replaces
+## The premise
 
-`TRANSITION-BRIEF.md` asked for four directions for what the pin hands off to, on the
-premise that a NEW object arrives and carries the scroll onward across stations
-(lightweight.info's wheel as the reference).
+The pin does not hand off to a new object. The subject — beans, then the bag — is carried
+continuously from the first frame of the site to the last, through four parts under one
+scroll. There are no section breaks in the subject. Only the medium changes, once.
 
-**That premise is dead.** The designer's answer is that nothing new arrives — the film
-simply keeps going. The pin does not hand off; it extends. Do not write the four
-directions. `TRANSITION-BRIEF.md` is superseded and kept only as history.
+## The four parts, in scroll order
 
-## The structure as described
+### PART 1 — the approach — HIGGSFIELD FILM (staging LOCKED, take 4)
+Site opens here. Camera closes on a curtain of falling beans pouring from the drum mouth;
+beans darken pale green -> tan -> brown -> near-black glossy; machine gone by ~7s; camera
+ends inside the fall, travelling downward, beans edge to edge. Ends mid-motion.
+- Status: staging locked at take 4, job `1667b1e9-85e7-476f-b45c-1c9edcf275c9`, 480p draft.
+- **Outstanding: 720p ship render of the IDENTICAL prompt, 65 cr.** Hard dependency.
+- Exact prompt preserved in `RESUME.md`.
 
-One continuous piece of footage under one scrub, in three movements:
+### PART 2 — the fall, the reveal, the wrap — HIGGSFIELD FILM (new, not generated)
+Seeded from PART 1's exact final frame so the join is invisible.
+1. Camera continues following the beans down.
+2. **2-second pull-back.** Beans decelerate WITH the camera — shared easing, not a snap.
+3. The pull-back reveals what the beans have been falling into: the coffee bag.
+4. **Camera stops with the bag front and centre while the last bean is still in the air.**
+   Camera stationary, bean still falling.
+5. The last bean lands.
+6. The bag wraps itself up. No hands in frame.
+7. **Held tail:** bag front and centre, static, for a beat — this frame is the seed for PART 3.
+- Revised 2026-09-15: pull-back cut from 2-3s to 1s, then settled at 2s. The wrap was moved
+  INTO this part (it was previously a standalone movement 3).
+- Designer was told a shorter pull-back does not by itself save credits (Higgsfield prices
+  per clip duration tier, not per second of a camera move) and chose 2s on shot quality.
 
-**Movement 1 — the approach (existing, staging LOCKED at take 4).**
-Site opens on the scroll animation. The visitor scrolls, the camera closes on the falling
-beans, and keeps closing until the beans cover the screen edge to edge. Ends mid-motion,
-travelling downward. This is the 720p ship render, still outstanding.
+### PART 3 — the posed bag — LIVE 3D, NOT FILM (new)
+Opens on PART 2's held final frame: bag front and centre. From here the page runs the
+opening-section structure of lightweight.info/en, with our bag standing in for their rim.
+**Designer picked option 3: a true live GLB in a WebGL layer**, having been shown the two
+cheaper alternatives (held still + DOM, or a Blender turntable baked to frames and scrubbed
+on the existing engine).
+- Asset: coffee bag modelled and textured in **Blender**, exported GLB.
+- Runtime: a persistent fixed WebGL canvas behind the DOM — the technique measured on
+  lightweight.info (`PageBackground_isFixed`, 1 canvas, re-posed station by station; see
+  `REFERENCE-lightweight.md`).
+- **End state = the designer's supplied screenshot.** Subject centred-left with concentric
+  hairline rings; `+` registration marks at frame corners plus mid-height crosshairs
+  flanking the subject; left rail of numbered stations against a vertical hairline with a
+  scroll-position thumb; right column of eyebrow -> oversized headline -> spec paragraph ->
+  pill CTA; persistent top nav.
+- The screenshot is this part's END state, not its start.
 
-**Movement 2 — the fall and the reveal (NEW, not generated).**
-Starts from the EXACT END FRAME of movement 1, so the join is invisible.
-- Camera continues to follow the beans down as they fall.
-- After ~2-3 seconds, the camera slowly begins to back up.
-- As it backs up, the beans slow down with it. Deceleration is shared between camera
-  and subject — they ease off together.
-- The pull-back reveals what the beans have been falling INTO: the coffee bag.
-- The beans slow all the way down until the last single bean falls into the bag.
-- The bag ends front and centre.
+### PART 4 — the recentre, the rip, the pour, the pile — MEDIUM UNRESOLVED (new)
+Continues from PART 3's end state. Bag stays in a FIXED position throughout; the camera
+frame moves, not the bag.
+1. As the user scrolls on, **the camera frame shifts LEFT**, bringing the bag from
+   centred-left to dead centre of the screen.
+2. Holds centred for about **1 second**.
+3. **The bottom of the bag slowly rips open and beans start pouring out at the same time.**
+4. **The camera holds its distance — it does not push in, does not pull back.** It simply
+   follows the beans downward from a fixed distance as they fall.
+5. As it follows them down, the bag leaves frame and **the next page is revealed underneath**.
+6. With the bag completely out of sight, the beans keep falling, **hit the ground, and pile
+   up until the entire screen is filled**. This is the last page for now.
+All of it driven by scroll.
 
-**Movement 3 — the wrap (NEW, not generated).**
-The visitor is still scrolling. The bag is seen being wrapped up.
+## Open decisions — flagged to the designer, NOT resolved
 
-## Why this is strong (recorded, not a pitch)
+1. **"Four videos" is not four Higgsfield renders.** PART 3 is a Blender/GLB asset, not
+   film. On the current picks, only PARTS 1 and 2 are unambiguously Higgsfield. PART 4's
+   medium is genuinely open (see 2 and 3). Quote accordingly; do not invent a PART 3 quote.
+2. **PART 4 opens on the GLB bag.** If PART 4 is Higgsfield footage, the page crosses
+   CG -> photoreal mid-part, having already crossed photoreal -> CG at the 2/3 join. Keeping
+   PART 4 in Blender keeps one continuous 3D world and one seam instead of two.
+3. **Step 5 needs ALPHA.** Beans falling and piling OVER a revealed DOM page means
+   transparency. Higgsfield outputs opaque MP4 — it has no alpha channel. Either the beans
+   are Blender-rendered with alpha and composited over the real page, or the "page
+   underneath" is baked into the video and is not real DOM. This is the single biggest
+   technical constraint in PART 4 and it points hard at Blender.
+4. **The CG/photoreal join at 2 -> 3.** PART 2's held tail is where the swap hides. The GLB's
+   opening pose, lighting and lens framing must be matched to that exact frame. PART 2's
+   final frame is the modelling and texturing reference.
+5. **Two engines, two fallbacks.** Phone and reduced-motion already have a still path for the
+   film scrub; the WebGL layer needs its own or the page has a hole on low-end devices.
+6. **The stale 2025 struck date.** `ASTRA-PROMPT.md` §8's DOM-overprint fix was scoped to a
+   macro STILL. The bag is now on screen large and held for a long stretch, and in PART 3-4
+   it is a 3D object. On the GLB the date is a texture and is fixable for free at export.
+   Over PART 2's filmed wrapping bag, the overprint will not track. Unresolved.
+7. **The DEVICE's detach point moves again.** The counter currently detaches at the unpin.
+   The pin now runs through PART 4. The DEVICE itself is not reopened — only where it lands.
+8. **RUNWAY and IA are stale.** `master.md` RUNWAY (14vh pin) and IA assume the pin ends at
+   frame 6. Four parts is far longer. `STORYBOARD.md`, `COMPONENTS.md` and
+   `ASTRA-PROMPT.md` §5 remain provisional until this is costed and the medium of PART 4 is
+   settled.
 
-The reveal is the argument. The beans the visitor has been riding for the whole pin turn
-out to have been going into the product the whole time — the proof and the CTA are the
-same object, arrived at by continuous motion rather than by a section break. It also
-satisfies the transition brief's "carry the scroll onward" requirement with footage
-instead of a second engine, so it costs no 3D asset, no R3F canvas, and no MECHANISM
-change.
+## MECHANISM — designer-signed amendment, recorded not re-decided
 
-## Consequences flagged to the designer, not yet resolved
+`master.md` is signed `MECHANISM: pin-film`, `PRIMITIVES: n/a`, with a `WHY` that explicitly
+rejects `pin-live-scene`. By picking option 3 the designer has put a live WebGL layer on the
+page alongside the film scrub. **The page is now a hybrid: pin-film for PARTS 1-2, live 3D
+from PART 3 on.** This was raised as a conflict and the designer confirmed the pick.
+`engine-decision` has NOT been re-run and is not to be re-run. This paragraph exists so that
+Astra does not read `master.md` and build a single-engine page.
 
-1. **The 720p ship render is now a hard dependency, not housekeeping.** Movement 2 is
-   seeded from movement 1's final frame. Seeding from the 854x480 take-4 draft would put a
-   resolution seam at the join. Ship render first, then extract its last frame, then
-   generate movement 2.
-2. **Probably more than one render.** Movements 2 and 3 are different actions with
-   different camera behaviour; one take is unlikely to hold both. Expect movement 3 to be
-   seeded from movement 2's end frame in turn. Cost honestly at quote time.
-3. **No bag footage exists.** On disk: `public/media/bag-label-macro.png` (signed, take 2,
-   macro still, carries the stale 2025 struck date). Whether the bag in movements 2-3 is
-   seeded from that still or described fresh changes the prompt and the continuity risk.
-   Identity holds: matte black flat-bottom pouch, flush brushed-steel valve, struck date.
-4. **The counter's detach point moves.** The DEVICE currently detaches at the unpin and
-   docks to the page edge. If the pin now runs through the wrap, that moment is elsewhere.
-   The DEVICE itself is not reopened — only where it lands.
-5. **RUNWAY and IA are stale.** `master.md` RUNWAY (14vh pin) and IA assume the pin ends at
-   frame 6. A three-movement pin is longer. `STORYBOARD.md`, `COMPONENTS.md` and
-   `ASTRA-PROMPT.md` §5 stay provisional until the designer has finished describing the
-   site.
+## What is NOT reopened
 
-## Still to come from the designer
+Signed identity (cold instrument over a hot process; `#0B0B0C` / `#EDEDE8`; ember `#C4491F`
+reserved for counter and CTA; mono, tabular-nums, hairlines; the three NOT registers). The
+DEVICE. The film's locked staging at take 4. Bag identity: matte black flat-bottom pouch,
+flush brushed-steel valve, struck date.
 
-- The final piece of the scroll animation (stated as outstanding).
-- The rest of the website below it.
+## Production context
 
-## What is NOT reopened by any of this
+Blender is now wired into GPT-6 and into the Astra flow alongside Higgsfield; target is a
+4K-quality site generated by GPT-6 Astra from the handoff package. Claude Code's job here
+remains planning and mapping, not building. Blender is an AUTHORING tool — the lightweight
+rim runs as real-time WebGL in the browser, not as a Blender render.
 
-Signed identity (cold instrument over a hot process; `#0B0B0C` / `#EDEDE8`; ember
-`#C4491F` reserved for counter and CTA; mono, tabular-nums, hairlines; the three NOT
-registers). The DEVICE. MECHANISM `pin-film`. The film's locked staging at take 4.
+## Next action (designer's stated order)
 
-## Production context (new, recorded for planning only)
-
-The designer now has Blender connected to GPT-6 and into the Astra flow, alongside
-Higgsfield. The end goal is a 4K-quality site generated by GPT-6 Astra from the handoff
-package; Claude Code's job here remains planning and mapping the structure, not building.
-This does not change MECHANISM and does not by itself authorise a 3D asset — it widens
-what is affordable if a later piece of the structure needs one.
+Higgsfield quotes for the film parts come FIRST — before any Blender work and before Astra.
+See `NEW-CHAT-PROMPT.txt`.

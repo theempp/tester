@@ -1,33 +1,45 @@
 Continuing the coffee roaster job in /Users/zozo/Desktop/test.
 
-Read RESUME.md first, then SCROLL-STRUCTURE.md, then master.md. Do not read
-TRANSITION-BRIEF.md as live work — it is superseded history and its four directions are
-dead. Don't re-run job-kickoff, don't re-open the signed identity, the DEVICE, or the
-film's locked take-4 staging, and don't re-run engine-decision — MECHANISM stays pin-film.
+Read RESUME.md, then SCROLL-STRUCTURE.md, then master.md. Do NOT read TRANSITION-BRIEF.md as
+live work — it is superseded history and its four directions are dead.
 
-Where we got to: the restructure is that the pin doesn't hand off to anything, the film
-just continues. Three movements — the approach we already have locked, then a fall-and-
-reveal where the camera backs up and the beans decelerate until the last one lands in the
-bag, then the bag being wrapped. That's written down in SCROLL-STRUCTURE.md and it's
-PARTIAL on purpose.
+Do not re-run job-kickoff. Do not re-open the signed identity, the DEVICE, or the film's
+locked take-4 staging. Do not re-run engine-decision — the hybrid engine in
+SCROLL-STRUCTURE.md's amendment section is a designer decision already made and confirmed.
 
-What I want to do in this chat:
-1. I'm going to describe the FINAL piece of the scroll animation.
-2. Then I'm going to draw out the rest of the website below it for you.
+THIS CHAT HAS ONE JOB: Higgsfield quotes for the film parts of the four-part scroll. Nothing
+else. No Blender work, no Astra prompt, no touching COMPONENTS.md or ASTRA-PROMPT.md §5.
 
-So: read the files, tell me you're caught up, and wait. Don't propose anything, don't
-write the storyboard, don't touch COMPONENTS.md or ASTRA-PROMPT.md §5 until I've finished
-describing it. Your job is to plan and map the structure — the site itself gets built by
-GPT-6 Astra from the handoff package, not here.
+What I need from you, in this order:
 
-Context on my setup: I now have Blender wired into GPT-6 and into the Astra flow alongside
-Higgsfield, and I'm going for 4K quality. That widens what assets are affordable; it does
+1. Confirm you are caught up on the four parts.
+
+2. Tell me honestly which of the four parts are actually Higgsfield renders and which are
+   not. SCROLL-STRUCTURE.md's "Open decisions" section says PART 3 is a Blender/GLB asset
+   and PART 4's medium is unresolved because its beans have to composite over a real DOM
+   page, which needs an alpha channel Higgsfield does not output. I want that fork laid out
+   before any numbers, not after. If PART 4 can only be done properly in Blender, say so.
+
+3. Then quote, ONE CARD AT A TIME, in this order:
+   a. PART 1's 720p ship render — take 4's EXACT prompt, unchanged, 65 cr. This is the hard
+      dependency; PART 2 is seeded from its final frame and seeding from the 480p draft
+      would put a resolution seam at the join.
+   b. PART 2 — the fall, 2-second pull-back with beans decelerating WITH the camera, the bag
+      reveal, camera stopping while the last bean is still in the air, the bean landing, the
+      bag wrapping itself up with NO hands in frame, then a held static tail on the bag front
+      and centre for the seed frame.
+   c. PART 4 — only if it is genuinely Higgsfield-able. If it is not, quote nothing and tell
+      me what it costs in Blender time instead.
+
+   Read the higgsfield skill first. Read VOICE.md and LEDGER.md's Prompt phrasing section
+   before writing any prompt. Quote first, always. Give me a running total against the
+   ~1082 credit balance.
+
+4. Fire NOTHING until I type GO on its own line. One GO covers one card only.
+
+More Higgsfield spend is pre-accepted in principle, but I still want to see every number
+before it happens.
+
+Context on my setup: Blender is wired into GPT-6 and into the Astra flow alongside
+Higgsfield, and I am going for 4K quality. That widens what assets are affordable. It does
 not by itself change the mechanism.
-
-Assets: more Higgsfield spend is pre-accepted. Quote them one card at a time and don't fire
-anything until I type GO on its own line.
-
-Don't let this get lost: the hero film's staging is locked at take 4 but it's only a 480p
-draft. It needs a 720p ship render of the identical prompt (65 cr) before it gets encoded
-and installed — and it's now a hard dependency, because movement 2 has to be seeded from
-that render's exact final frame or the join will show a resolution seam.

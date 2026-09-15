@@ -26,13 +26,22 @@ EXACT prompt at **720p, 65 cr**, review it against the same four criteria, then:
 `ffmpeg -i <f> -c:v libx264 -g 1 -crf 18 -preset slow -an public/media/hero-roast-film.mp4`
 Never serve the raw Higgsfield file. Quote it and wait for a standalone `GO`.
 
-### 2. The RESTRUCTURE has been described — see `SCROLL-STRUCTURE.md`
-The designer described it 2026-09-15. The pin does not hand off to a new object; the film
-CONTINUES. Three movements: the approach (existing, locked), the fall-and-reveal into the
-bag (new), the bag being wrapped (new). Read `SCROLL-STRUCTURE.md` before anything else.
-It is PARTIAL — the designer has more of the scroll and the whole page below it still to
-describe. `STORYBOARD.md` section order, `COMPONENTS.md`, `ASTRA-PROMPT.md` §5, and
-master.md's RUNWAY/IA are all provisional until they finish.
+### 2. The RESTRUCTURE is fully described — see `SCROLL-STRUCTURE.md`
+The designer finished describing it 2026-09-15. The pin does not hand off to a new object;
+the subject is carried continuously through FOUR parts under one scroll:
+1. the approach (Higgsfield, staging locked at take 4)
+2. the fall -> 2s pull-back -> bag reveal -> last bean -> self-wrap -> held tail (Higgsfield, new)
+3. the posed bag, lightweight.info-style, as a LIVE GLB in a WebGL layer (Blender, not film)
+4. recentre left -> bottom rips -> beans pour -> next page revealed -> beans pile to full screen
+
+**The page is now a HYBRID engine** — pin-film for parts 1-2, live 3D from part 3 on. The
+designer picked that knowingly over two cheaper options. `engine-decision` does NOT re-run.
+`master.md` MECHANISM/PRIMITIVES/WHY contradict this and must be read alongside
+`SCROLL-STRUCTURE.md`'s amendment section.
+
+Part 4's medium is UNRESOLVED — its bean-fall has to composite over a real DOM page, which
+needs alpha, which Higgsfield cannot output. `STORYBOARD.md`, `COMPONENTS.md`,
+`ASTRA-PROMPT.md` §5 and master.md's RUNWAY/IA all stay provisional until parts are costed.
 
 ### 3. The transition brief is SUPERSEDED — do not write the four directions
 `TRANSITION-BRIEF.md` asked for four directions for a new object crossing stations. The
@@ -143,7 +152,7 @@ is the best transition on the page.
 
 | File | What it is |
 |---|---|
-| `SCROLL-STRUCTURE.md` | **the restructure — the continuous three-movement film (partial)** |
+| `SCROLL-STRUCTURE.md` | **the restructure — the continuous four-part scroll (COMPLETE)** |
 | `TRANSITION-BRIEF.md` | superseded history; do not action |
 | `master.md` | the signed skeleton — identity, mechanism, slots, runway |
 | `DESIGN.md` | the signed look + the two rejected directions |
