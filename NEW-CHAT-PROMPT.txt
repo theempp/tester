@@ -1,45 +1,66 @@
 Continuing the coffee roaster job in /Users/zozo/Desktop/test.
 
-Read RESUME.md, then SCROLL-STRUCTURE.md, then master.md. Do NOT read TRANSITION-BRIEF.md as
-live work — it is superseded history and its four directions are dead.
+Read RESUME.md, then SCROLL-STRUCTURE.md — and in SCROLL-STRUCTURE.md read AMENDMENT 2 at
+the bottom FIRST, because it supersedes the sections above it. Then master.md.
 
-Do not re-run job-kickoff. Do not re-open the signed identity, the DEVICE, or the film's
-locked take-4 staging. Do not re-run engine-decision — the hybrid engine in
-SCROLL-STRUCTURE.md's amendment section is a designer decision already made and confirmed.
+Do NOT read TRANSITION-BRIEF.md as live work — superseded history, its four directions are
+dead.
 
-THIS CHAT HAS ONE JOB: Higgsfield quotes for the film parts of the four-part scroll. Nothing
-else. No Blender work, no Astra prompt, no touching COMPONENTS.md or ASTRA-PROMPT.md §5.
+Do not re-run job-kickoff. Do not re-open the signed identity, the DEVICE, or engine-decision
+— the hybrid engine (pin-film for PARTS 1-2, live 3D from PART 3 on) is a designer decision
+already made and confirmed. Do not touch COMPONENTS.md, ASTRA-PROMPT.md, or any Blender work.
 
-What I need from you, in this order:
+THIS CHAT HAS ONE JOB: get PART 2 — the fall, the reveal, the wrap — generated on Higgsfield.
 
-1. Confirm you are caught up on the four parts.
+WHAT IS ALREADY SETTLED, DO NOT RE-LITIGATE:
+- Only PARTS 1 and 2 are Higgsfield. PART 3 and PART 4 are both Blender/WebGL. PART 4 was
+  settled as Blender this session — the alpha problem dissolves once it is real-time WebGL
+  in the canvas PART 3 already puts on the page. No Higgsfield quote for 3 or 4, ever.
+- PART 1's staging was reopened: pitch-black room is DEAD, PART 1 is outdoors on bare open
+  ground in hard sun, beans falling with nothing collecting them.
+- PART 2's revised spec and its full drafted prompt are written out in AMENDMENT 2. The
+  designer revised it: beans a little glossy and NOT oily, no sunlight on the falling beans,
+  camera pulls back a little BEFORE the beans slow, bag + beans front and centre for ~1s
+  first, then quick deceleration to the last bean, bag wraps itself up QUICKLY, held tail
+  1-2s. Use that prompt as the starting point, not the older beat list higher in the file.
 
-2. Tell me honestly which of the four parts are actually Higgsfield renders and which are
-   not. SCROLL-STRUCTURE.md's "Open decisions" section says PART 3 is a Blender/GLB asset
-   and PART 4's medium is unresolved because its beans have to composite over a real DOM
-   page, which needs an alpha channel Higgsfield does not output. I want that fork laid out
-   before any numbers, not after. If PART 4 can only be done properly in Blender, say so.
+READ THE HIGGSFIELD SKILL FIRST. Also read VOICE.md and traps.md in
+~/.claude/skills/higgsfield/ before writing any prompt. Note: LEDGER.md does NOT exist on
+this machine — do not go looking for it, its lesson is already in traps.md.
+Quote first, always. Fire NOTHING until I type GO on its own line. One GO covers one card.
 
-3. Then quote, ONE CARD AT A TIME, in this order:
-   a. PART 1's 720p ship render — take 4's EXACT prompt, unchanged, 65 cr. This is the hard
-      dependency; PART 2 is seeded from its final frame and seeding from the 480p draft
-      would put a resolution seam at the join.
-   b. PART 2 — the fall, 2-second pull-back with beans decelerating WITH the camera, the bag
-      reveal, camera stopping while the last bean is still in the air, the bean landing, the
-      bag wrapping itself up with NO hands in frame, then a held static tail on the bag front
-      and centre for the seed frame.
-   c. PART 4 — only if it is genuinely Higgsfield-able. If it is not, quote nothing and tell
-      me what it costs in Blender time instead.
+THE BLOCKER YOU MUST RESOLVE WITH ME BEFORE QUOTING PART 2:
 
-   Read the higgsfield skill first. Read VOICE.md and LEDGER.md's Prompt phrasing section
-   before writing any prompt. Quote first, always. Give me a running total against the
-   ~1082 credit balance.
+PART 2 is seeded from PART 1's EXACT final frame so the join is invisible. That makes it an
+image-to-video job needing that frame as an uploaded input — which means sequence B, TWO GOs
+(upload first, real cost second), not one. And PART 1 has no signed take and no 720p ship
+render, so that frame does not exist yet.
 
-4. Fire NOTHING until I type GO on its own line. One GO covers one card only.
+Take 5 (480p, 25 cr, job f56c5833-fb1b-435e-a503-ea0a8846d30b, review/hero-roast-take5.mp4)
+was reviewed and NOT signed. It got the outdoor staging, the sun, the bare ground, the
+unbroken curtain, zero cuts and a correct streaming final frame — but the machine came back
+as a riveted bolted black plate hopper with a chimney stack, agricultural rather than
+laboratory, with no brushed stainless anywhere. That contradicts signed MAT and CHAR. The
+beans also mound at the machine's base in the first ~3s.
 
-More Higgsfield spend is pre-accepted in principle, but I still want to see every number
-before it happens.
+So lay out the fork for me in your first reply, before any numbers:
 
-Context on my setup: Blender is wired into GPT-6 and into the Astra flow alongside
-Higgsfield, and I am going for 4K quality. That widens what assets are affordable. It does
-not by itself change the mechanism.
+  (a) Fix PART 1 first — 480p delta retake (25 cr) for the machine finish and the bare
+      ground, then the 720p ship render (65 cr), then pull its final frame and seed PART 2
+      properly (est. 65 cr). Total est. 155 cr. This is the clean path and keeps the join.
+  (b) Fire PART 2 now as text-to-video with no seed frame (est. 65 cr), accepting that the
+      join between PART 1 and PART 2 will not match and may have to be re-fired later.
+
+Tell me honestly which you'd do and why, then quote ONE CARD for whichever I pick. Give me a
+running total against the ~1056.31 balance every time.
+
+Two operational things that will bite you:
+- Higgsfield pushes the "IN THE DARK" preset on this prompt family and SUBMITS NOTHING when
+  it does. Decline it and re-fire literally with
+  declined_preset_id: 24bae836-2c4a-48e0-89b6-49fcc0b21612
+- Confirmed tiers on seedance_2_5, 10s, 24fps, 16:9: 480p = 25 cr, 720p = 65 cr.
+
+Review the pixels before telling me anything is ready — download it, run cut detection,
+build a contact sheet, and actually open the frames. Never overwrite a take.
+
+More Higgsfield spend is pre-accepted in principle, but I want to see every number first.

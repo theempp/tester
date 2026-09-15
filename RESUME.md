@@ -13,16 +13,25 @@ site in one prompt. `ASTRA-PROMPT.md` is that package.
 
 ## STATE — read this first
 
-**The film's staging is LOCKED at take 4.** Job `1667b1e9-85e7-476f-b45c-1c9edcf275c9`,
+> **UPDATED 2026-09-15, late session.** PART 1's staging was REOPENED by the designer:
+> the pitch-black room is dead, PART 1 is now **outdoors on bare ground in hard sun**.
+> Take 5 was fired (25 cr) and reviewed — **not signed**, the machine came back wrong.
+> PART 2's spec was revised. PART 4 was settled as Blender. **Full detail is in
+> `SCROLL-STRUCTURE.md` AMENDMENT 2, which wins over anything below that contradicts it.**
+> Spend is now **207 cr**; balance **~1056.31**.
+
+**SUPERSEDED — take 4's locked staging.** Job `1667b1e9-85e7-476f-b45c-1c9edcf275c9`,
 480p draft, reviewed and passed on all four criteria: black surround, beans falling as a
 continuous curtain, camera never retreats, ends on a full-frame downward-streaming field.
 Zero cuts. `review/hero-roast-take4.mp4`.
 
 **Three things are open:**
 
-### 1. The ship render (mechanical, do this first)
-Take 4 is 854x480. It is a full-bleed fixed desktop layer and will be soft. Re-run take 4's
-EXACT prompt at **720p, 65 cr**, review it against the same four criteria, then:
+### 1. The ship render — NO LONGER MECHANICAL, AND NOT NEXT
+This step assumed take 4's staging was signed. It is not. The next spend is a **480p delta
+retake (25 cr)** fixing take 5's machine, and only then the 720p. Do not buy 720p to fix a
+story miss. Once a take IS signed, re-run its EXACT prompt at **720p, 65 cr**, review it
+against the four criteria (criterion 1 is now sun/bare-ground, not black surround), then:
 `ffmpeg -i <f> -c:v libx264 -g 1 -crf 18 -preset slow -an public/media/hero-roast-film.mp4`
 Never serve the raw Higgsfield file. Quote it and wait for a standalone `GO`.
 
@@ -115,13 +124,14 @@ BROKE:
 
 | Slot | State | File |
 |---|---|---|
-| `hero-roast-film` | staging LOCKED (take 4); 720p ship render outstanding | → `public/media/hero-roast-film.mp4` |
+| `hero-roast-film` | **take 5 reviewed, NOT signed** (machine wrong); delta retake then 720p | → `public/media/hero-roast-film.mp4` |
 | `bag-label-macro` | signed (take 2) | `public/media/bag-label-macro.png` |
 | `doorstep-48` | signed (take 1) | `public/media/doorstep-48.png` |
 | `grain-canvas` | placeholder by design — built in code | Magic UI `noise-texture` |
 
-Spend so far: **182 credits** (2 stills + 25 take 1 + 65 take 2 + 65 take 3 + 25 take 4).
-Balance ~1082.31. Video alone is 180 of that across four takes, three rejected.
+Spend so far: **207 credits** (2 stills + 25 take 1 + 65 take 2 + 65 take 3 + 25 take 4
++ 25 take 5). Balance **~1056.31** (live `balance` is authoritative; it read 1081.31 before
+take 5). Video alone is 205 of that across five takes, four rejected, none signed.
 Drafts and rejected takes live in `review/` and are never overwritten.
 
 ## The ending changed — storyboard already updated
@@ -152,7 +162,7 @@ is the best transition on the page.
 
 | File | What it is |
 |---|---|
-| `SCROLL-STRUCTURE.md` | **the restructure — the continuous four-part scroll (COMPLETE)** |
+| `SCROLL-STRUCTURE.md` | **the restructure + AMENDMENT 2 — READ THE AMENDMENT FIRST** |
 | `TRANSITION-BRIEF.md` | superseded history; do not action |
 | `master.md` | the signed skeleton — identity, mechanism, slots, runway |
 | `DESIGN.md` | the signed look + the two rejected directions |
@@ -161,6 +171,20 @@ is the best transition on the page.
 | `REFERENCE-lightweight.md` | DOM-verified findings from lightweight.info/en |
 | `ASTRA-PROMPT.md` | **the deliverable** — one paste-in prompt |
 | `review/` | drafts, contact sheets, rejected takes |
+
+## Higgsfield operational notes (learned this session)
+
+- **`LEDGER.md` does not exist on this machine.** The skill points at its "Prompt phrasing"
+  section; only `VOICE.md` and `traps.md` are present in
+  `~/.claude/skills/higgsfield/`. The relevant lesson already lives in `traps.md`.
+- **The IN THE DARK preset nudge fires on this prompt family.** Higgsfield returns a
+  `preset_recommendation` and submits NOTHING. Decline it by re-firing with
+  `declined_preset_id: 24bae836-2c4a-48e0-89b6-49fcc0b21612`. No extra credits are charged
+  for the refused submit. Expect it again.
+- **Price tiers confirmed by `get_cost` on seedance_2_5, 10s, 24fps, 16:9:**
+  480p = **25 cr**, 720p = **65 cr**. The `resolution` param is read and respected.
+- **PART 2 is image-to-video** (seeded from PART 1's final frame) and therefore needs an
+  upload → sequence B → **two GOs**, not one. Its cost returns only after the upload.
 
 ## Not yet done
 
