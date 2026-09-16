@@ -4,8 +4,9 @@ Last worked 2026-09-15. Read this first, then `master.md`.
 
 ## Where the job is
 
-Kickoff steps 1 and 2 are **complete and signed**. Step 3 (assets) is essentially done —
-all three slots are approved; the film needs one mechanical re-render at ship resolution.
+Kickoff steps 1, 2 and 3 are **complete and signed**. Every Higgsfield asset is shipped;
+nothing on this job is left to generate. What remains is the Blender build for PARTS 3-4
+and the Astra paste.
 
 **The build has not started.** This job is not being built here — the deliverable is a
 handoff package for the designer to paste into "Astra" (GPT-6 Astra), which generates the
@@ -13,18 +14,30 @@ site in one prompt. `ASTRA-PROMPT.md` is that package.
 
 ## STATE — read this first
 
-> **UPDATED 2026-09-15, Higgsfield chat 2. READ `SCROLL-STRUCTURE.md` AMENDMENT 3 FIRST —
-> it wins over AMENDMENT 2 and over everything below.**
+> **UPDATED 2026-09-15, Higgsfield chat 3. READ `SCROLL-STRUCTURE.md` AMENDMENT 4 FIRST —
+> it wins over AMENDMENT 3 and over everything below.**
 >
-> - **PART 1 is SIGNED AND SHIPPED.** Take 6 fixed the machine; the mound at the base was
->   accepted as a known deviation. Shipped by UPSCALE (0.1 cr), not a 65 cr native
->   re-render. Files are in `public/media/`.
-> - **PART 2 take 1 was REJECTED** — "not even close yet", designer gave no specifics.
->   **The next chat must ASK what is wrong before quoting a retake.**
-> - **Packaging reopened:** the pack is now the OFF-WHITE `HOUR ZERO` pouch
->   (`review/bag-round-1/B-offwhite-4k.png`), not matte black. PARTS 3 and 4 Blender work
->   must use this bag. The business name is signed as **HOUR ZERO**.
-> - Spend is now **267.1 cr**; balance **981.71**.
+> - **PART 1 is SIGNED AND SHIPPED.** `public/media/hero-roast-film.mp4` (+ `-720`).
+> - **PART 2 is SIGNED AND SHIPPED.** Take 3, upscaled to 1080p. `public/media/part2-bag.mp4`
+>   (+ `-720`). Its final frame is exported to `review/part2-final-frame.jpg`.
+> - **HIGGSFIELD IS DONE ON THIS JOB. Nothing is left to generate.** PARTS 3 and 4 are
+>   Blender + WebGL and must never be quoted on Higgsfield.
+> - The pack is the OFF-WHITE `HOUR ZERO` pouch. The business name is **HOUR ZERO**.
+> - The engine is **hybrid** — pin-film for PARTS 1-2, live 3D from PART 3 on. Settled;
+>   `engine-decision` does not re-run. `master.md` is now reconciled to this.
+> - Final spend on this job **327.3 cr**; live balance **883.41**.
+> - **38 cr of unexplained spend is NOT this job's** — a `Meshy 7 Image to 3D` charge at
+>   00:32 UTC, fired by something else. See AMENDMENT 4. Do not book it against HOUR ZERO.
+
+**What is left, in order:**
+1. **Build the Blender GLB and the PART 3/4 animation.** This is the real remaining work —
+   scope is written out in `ASTRA-PROMPT.md` §9.
+2. **Paste `ASTRA-PROMPT.md` into GPT Astra 6** to generate the site.
+3. QA (`verify-handoff`) once something exists to QA.
+
+---
+
+### HISTORY BELOW THIS LINE — superseded, kept for the prompt archive and the lessons only
 
 **SUPERSEDED — take 4's locked staging.** Job `1667b1e9-85e7-476f-b45c-1c9edcf275c9`,
 480p draft, reviewed and passed on all four criteria: black surround, beans falling as a
@@ -131,7 +144,8 @@ BROKE:
 | Slot | State | File |
 |---|---|---|
 | `hero-roast-film` (PART 1) | **SIGNED — take 6, upscaled to 1080p, shipped** | `public/media/hero-roast-film.mp4` + `-720.mp4` |
-| `hero-roast-film` (PART 2) | **take 1 REJECTED, reason not captured — ask the designer** | `review/part2-take1.mp4` |
+| `part2-bag` (PART 2) | **SIGNED — take 3, upscaled to 1080p, shipped** | `public/media/part2-bag.mp4` + `-720.mp4` |
+| `hour-zero-bag.glb` (PARTS 3-4) | **NOT STARTED — Blender. The real remaining work.** | see `ASTRA-PROMPT.md` §9 |
 | `bag-label-macro` | signed (take 2) | `public/media/bag-label-macro.png` |
 | `doorstep-48` | signed (take 1) | `public/media/doorstep-48.png` |
 | `grain-canvas` | placeholder by design — built in code | Magic UI `noise-texture` |

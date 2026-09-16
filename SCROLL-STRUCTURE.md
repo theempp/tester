@@ -378,3 +378,67 @@ The designer supplied `review/bag-round-1/B-offwhite-4k.png` and asked for PART 
   film. Takes 1-6 were likely generated with unused audio.
 - **Upscale targets are 1080p / 2k / 4k only.** Asking for 720p silently defaults to 2k.
   Always pass the target explicitly.
+
+---
+
+## AMENDMENT 4 — 2026-09-15, PART 2 SIGNED AND SHIPPED. Higgsfield is DONE on this job.
+
+**AMENDMENT 4 wins over AMENDMENTS 1-3 where they disagree.**
+
+### PART 2 — SIGNED (take 3) AND SHIPPED
+
+Take 3: `review/part2-take3.mp4`, job `d00cab7b-5414-43d1-8477-b7aedc2a7692`, 480p, 30 cr.
+Signed by the designer, then upscaled (`bytedance_video_upscale`, 1080p EXPLICIT, job
+`55405d72-cf1e-4ded-8f29-62842ca12f10`, ~0.1 cr) rather than natively re-rendered at 720p —
+same reusable lesson as PART 1. Upscale reviewed: no rewritten edges, no invented texture.
+
+Shipped files (all-intra `-g 1`, silent, 241 frames, every frame a keyframe):
+- `public/media/part2-bag.mp4` — 1920x1080
+- `public/media/part2-bag-720.mp4` — phone file, downscaled locally, free
+- `review/part2-final-frame.jpg` — **PART 3's Blender camera-match target**
+
+**The two takes it took, and why:**
+- Take 2 (`review/part2-take2.mp4`, job `bd4ea5a1`, 30 cr) fixed the opening (no upward tilt),
+  the individual beans and the isolated last bean — but the bag got BIGGER, because the camera
+  pushed in instead of backing off, and that also ate the hard lock.
+- Take 3 fixed both by tying them together: the ease-back only ends when the whole bag is in
+  frame, and the hard stop happens at that instant.
+
+### DESIGNER RULINGS THAT OVERRIDE AMENDMENT 2's PART 2 SPEC
+
+AMENDMENT 2 said the beans slow **quickly** and the bag wraps **quickly**. Both are reversed:
+
+- **The beans slow down gradually and smoothly**, over several seconds, thinning bean by bean.
+  Never rapid-descent-to-dead-stop.
+- **The seal is one simple, smooth, slow fold.** No flutter, no twisting, no multiple folds.
+- **The beans fall from the very top edge of the screen** in one unbroken stream into the mouth
+  of the bag. They never begin mid-air.
+- **HARD LOCK.** The moment the whole bag is centred, the camera stops dead — no drift, no
+  creep — and the bag does not move either. Verified by measurement, not by eye: frame-to-frame
+  luma difference drops to ~0.02 at f188 (7.8s) and stays there, with one 0.66 spike at f220
+  which is the fold itself.
+
+### KNOWN DEVIATIONS ACCEPTED ON THE SHIPPED FILM
+
+Both were judged not worth 30 cr, because both are free to fix in Blender:
+1. **Wordmark clipped at both pouch edges** — the `H` and final `O` run off the face. Baked
+   into the source bag art; survived all three takes. Fixed in the GLB texture.
+2. **Faint floor plane and soft contact shadow** at the bottom of frame, where the spec says
+   pure black. Blender matches it in PART 3 rather than fighting it.
+
+### HIGGSFIELD IS FINISHED ON THIS JOB
+
+PARTS 1 and 2 are both signed and shipped. **There is nothing left to generate.** PARTS 3 and 4
+are Blender + WebGL and must NEVER be quoted on Higgsfield — see AMENDMENT 2's PART 4 ruling,
+which still stands. The remaining work is the Blender build and the Astra paste.
+
+Final spend on this job: **327.3 cr** (267.1 carried in + 30 take 2 + 30 take 3 + 0.2 upscale).
+Live balance after: **883.41**.
+
+**LEDGER DISCREPANCY — NOT THIS JOB'S SPEND.** Balance is 38 cr lower than this job accounts
+for. The transaction log shows a **`Meshy 7 Image to 3D` charge of 38 cr at 00:32 UTC**, plus
+an `Image to 3D` 30 cr spend at 00:23 that was refunded in full at 00:29. No chat working this
+job fired those — nothing here has ever used a 3D model, and PARTS 3-4 are Blender, never
+Higgsfield. **Whoever fired the Meshy job should record it, and it must not be booked against
+HOUR ZERO.** Note also that the PART 1 upscale is recorded in AMENDMENT 3 as 0.1 cr; both
+upscales actually billed **0.2**.
