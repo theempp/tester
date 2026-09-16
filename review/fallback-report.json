@@ -1,0 +1,31 @@
+[
+  {
+    "mode": "none",
+    "class": "experience is-active",
+    "canvas": 1,
+    "focus": "Skip to the coffee",
+    "overflow": false,
+    "content": 6,
+    "errors": []
+  },
+  {
+    "mode": "film",
+    "class": "experience is-static",
+    "canvas": 1,
+    "focus": "Skip to the coffee",
+    "overflow": false,
+    "content": 6,
+    "errors": []
+  },
+  {
+    "mode": "glb",
+    "class": "experience is-active",
+    "canvas": 0,
+    "focus": "Skip to the coffee",
+    "overflow": false,
+    "content": 6,
+    "errors": [
+      "Could not load /models/hour-zero-bag.glb: Failed to fetch"
+    ]
+  }
+]

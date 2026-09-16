@@ -1,0 +1,235 @@
+[
+  {
+    "view": "desktop",
+    "target": 0.34,
+    "progress": "0.34001",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      5
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.439,
+    "progress": "0.43900",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      9.958333
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.441,
+    "progress": "0.44101",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.6,
+    "progress": "0.60000",
+    "clock": "02h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.8,
+    "progress": "0.80000",
+    "clock": "13h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.96,
+    "progress": "0.95999",
+    "clock": "40h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.8,
+    "progress": "0.80000",
+    "clock": "13h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.441,
+    "progress": "0.44101",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.439,
+    "progress": "0.43900",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      9.958333
+    ]
+  },
+  {
+    "view": "desktop",
+    "target": 0.1,
+    "progress": "0.10000",
+    "clock": "05:16",
+    "filmTime": [
+      2.5,
+      0
+    ]
+  },
+  {
+    "view": "desktop",
+    "canvas": 1,
+    "h1": 1,
+    "overflow": false,
+    "active": "experience is-active",
+    "src": "http://localhost:3001/media/hero-roast-film.mp4",
+    "stampCount": 1,
+    "details": true,
+    "errors": []
+  },
+  {
+    "view": "phone",
+    "target": 0.34,
+    "progress": "0.34000",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      5
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.439,
+    "progress": "0.43902",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      9.958333
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.441,
+    "progress": "0.44099",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.6,
+    "progress": "0.59998",
+    "clock": "02h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.8,
+    "progress": "0.79999",
+    "clock": "12h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.96,
+    "progress": "0.95999",
+    "clock": "40h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.8,
+    "progress": "0.79999",
+    "clock": "12h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.441,
+    "progress": "0.44099",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      10
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.439,
+    "progress": "0.43902",
+    "clock": "00h",
+    "filmTime": [
+      10,
+      9.958333
+    ]
+  },
+  {
+    "view": "phone",
+    "target": 0.1,
+    "progress": "0.09998",
+    "clock": "05:16",
+    "filmTime": [
+      2.5,
+      0
+    ]
+  },
+  {
+    "view": "phone",
+    "canvas": 1,
+    "h1": 1,
+    "overflow": false,
+    "active": "experience is-active",
+    "src": "http://localhost:3001/media/hero-roast-film-720.mp4",
+    "stampCount": 1,
+    "details": true,
+    "errors": []
+  },
+  {
+    "view": "reduced",
+    "canvas": 0,
+    "h1": 1,
+    "overflow": false,
+    "active": "experience is-static",
+    "src": "http://localhost:3001/media/hero-roast-film-720.mp4",
+    "stampCount": 1,
+    "details": true,
+    "errors": []
+  }
+]

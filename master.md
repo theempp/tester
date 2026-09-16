@@ -64,3 +64,7 @@ TYPE-RESERVE PROBLEM: PART 1's film is near-white for its first ~5s (pale grey s
             right-edge readout column and the lower third sit over that, and foreground
             #EDEDE8 on near-white is unreadable. A SCRIM IS REQUIRED, not optional — spec in
             ASTRA-PROMPT.md §4a. It must be constant through PARTS 1-2, never animated.
+
+BUILD RECORD — 2026-09-15
+Current implementation authority: BUILD-BRIEF.md, then SCROLL-STRUCTURE.md AMENDMENT 4.
+Local Next.js app implemented. Blender slot: on-disk public/models/hour-zero-bag.glb (about 347 KB, Draco); authoring source assets/source/hour-zero-bag.blend; static public/posters/bag-static.png. Existing films and stills retained unchanged. Missing operational data stays labeled. Verification and production gaps: review/QA.md. No deployment or paid generation.

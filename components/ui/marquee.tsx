@@ -1,0 +1,6 @@
+'use client';
+// Magic UI marquee structure, driven by the existing GSAP ticker and scroll velocity.
+import {useEffect,useRef,type ReactNode} from 'react';
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+export function Marquee({children,reverse=false,slow=false}:{children:ReactNode;reverse?:boolean;slow?:boolean}){const ref=useRef<HTMLDivElement>(null);useEffect(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;gsap.registerPlugin(ScrollTrigger);const el=ref.current!;let offset=0,visible=false,velocity=0;const st=ScrollTrigger.create({trigger:el,start:'top bottom',end:'bottom top',onToggle:s=>visible=s.isActive,onUpdate:s=>velocity=s.getVelocity()});const tick=(_t:number,dt:number)=>{if(!visible)return;velocity*=.93;offset+=(reverse?1:-1)*(slow?8:18)*(dt/1000)*(1+Math.min(Math.abs(velocity)/1000,2));const width=el.scrollWidth/2;if(width){offset=((offset%width)+width)%width;gsap.set(el,{x:offset-width})}};gsap.ticker.add(tick);return()=>{st.kill();gsap.ticker.remove(tick)}},[reverse,slow]);return <div className="rail" data-component="organism3-scroll-based-velocity"><div ref={ref} className="marquee-track"><span>{children}</span><span aria-hidden="true">{children}</span></div></div>}
